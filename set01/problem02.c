@@ -1,18 +1,14 @@
-   #include<stdio.h>
-int main(void)
+#include<stdio.h>
+int main()
 {
   int a,b,sum;
-  print("enter the first number\n");
+  printf("enter the first number:");
   scanf("%d",&a);
-  printf("enter the second number\n");
+  printf("enter the second number:");
   scanf("%d",&b);
-  sum=sum_func(a,b);
-  printf("the sum of two numbers is %d",sum);
-  return(0);
+  //calculating sum
+  sum = a+b;
+  printf("the sum of %d+%d=%d",a,b,sum);
+  return 0;
 }
-
-int  sum_func(int a , int b)
-{
-  int sum=a+b;
-  return sum;
-}
+  
